@@ -12,10 +12,6 @@ function getInput(inputValue) {
         alert('Please do not use any text here');
         return false;
     }
-    else if (inputNumber != '') {
-        alert('Please do not use any text here');
-        return false;
-    }
 }
 document.getElementById('calculate-btn').addEventListener('click', function () {
     let inputFoodCost = getInput('food');
@@ -41,7 +37,7 @@ document.getElementById('save-btn').addEventListener('click', function () {
         remainingBalance.innerText = balance.innerText - savingTotal;
     }
     else if (isNaN(saving)) {
-        alert('Enter a valid percentage');
+        alert('Percentage can not be a text,Please enter a number');
     }
     else if (saving > 100 || saving < 0) {
         alert('Enter a valid percentage');
