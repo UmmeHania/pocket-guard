@@ -40,20 +40,3 @@ document.getElementById('save-btn').addEventListener('click', function () {
         alert('Enter a valid percentage');
     }
 })
-
-// document.getElementById('calculate-btn').addEventListener('click', function () {
-//     let inputfoodCost = document.getElementById('food-cost');
-//     let foodCost = parseFloat(inputfoodCost.value);
-//     let inputRentCost = document.getElementById('rent-cost');
-//     let rentCost = parseFloat(inputRentCost.value);
-//     let inputClothCost = document.getElementById('cloth-cost');
-//     let clothCost = parseFloat(inputClothCost.value);
-//     let totalCost = foodCost + rentCost + clothCost;
-//     let totalExpenses = document.getElementById('total-expenses');
-//     totalExpenses.innerText = totalCost;
-//     let incomeInput = document.getElementById('income-input');
-//     let incomeTotal = parseFloat(incomeInput.value);
-//     let balance = document.getElementById('balance');
-//     balance.innerText = incomeTotal - totalCost;
-
-// })
