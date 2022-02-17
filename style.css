@@ -1,0 +1,23 @@
+h1{
+    color: #7459a0f6;
+    font-size: 40px;
+    font-weight: 700;
+}
+.violet{
+    color:#7459a0f6;
+}
+.violet-background{
+    background-color: #7459a0f6;
+    }
+
+h3{
+    font-size:20px;
+    font-weight: 600;
+    text-align: center;
+}
+p{
+    text-align:center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
