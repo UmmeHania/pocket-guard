@@ -5,14 +5,18 @@ function getInput(inputValue) {
         return inputNumber;
     }
     else if (inputNumber < 0) {
-        alert('Please enter a valid amount')
+        alert('Please enter a valid amount');
+        return false;
     }
     else if (isNaN(inputNumber)) {
-        alert('Please do not use any text here')
+        alert('Please do not use any text here');
+        return false;
     }
-
+    else if (inputNumber != '') {
+        alert('Please do not use any text here');
+        return false;
+    }
 }
-
 document.getElementById('calculate-btn').addEventListener('click', function () {
     let inputFoodCost = getInput('food');
     let inputRentCost = getInput('rent');
@@ -36,7 +40,10 @@ document.getElementById('save-btn').addEventListener('click', function () {
         let remainingBalance = document.getElementById('remaining-balance');
         remainingBalance.innerText = balance.innerText - savingTotal;
     }
-    else /*if (saving > 100 || saving < 0)*/ {
+    else if (isNaN(saving)) {
+        alert('Enter a valid percentage');
+    }
+    else if (saving > 100 || saving < 0) {
         alert('Enter a valid percentage');
     }
 })

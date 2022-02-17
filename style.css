@@ -10,6 +10,9 @@ h1{
     background-color: #7459a0f6;
     }
 
+.resize{
+        height:100%;
+    }
 h3{
     font-size:20px;
     font-weight: 600;
